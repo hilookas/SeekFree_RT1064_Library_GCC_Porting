@@ -1,0 +1,26 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Cortex Debug",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceRoot}/GCC/debug/tutorial.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "jlink",
+      "serverpath": "/Applications/SEGGER/JLink_V700a/JLinkGDBServerCLExe",
+      "armToolchainPath": "/usr/local/Caskroom/gcc-arm-embedded/10-2020-q4-major/gcc-arm-none-eabi-10-2020-q4-major/bin",
+      "device": "MIMXRT1064xxx6A",
+      "interface": "swd",
+      "serialNumber": "",
+      "jlinkscript":"${workspaceRoot}/GCC/evkmimxrt1064_sdram_init.jlinkscript",
+      "runToMain": true,
+      "svdFile":"${workspaceRoot}/GCC/MIMXRT1064.xml",
+      "preLaunchTask": "build"
+      // "serverArgs": ["-speed", "4000", "-vd"],
+    }
+  ]
+}

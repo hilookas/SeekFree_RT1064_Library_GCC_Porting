@@ -1,0 +1,9 @@
+!.vscode
+GCC/CMakeCache.txt
+GCC/cmake_install.cmake
+GCC/CMakeFiles
+GCC/Makefile
+GCC/debug
+GCC/release
+GCC/output.map
+GCC/build_log.txt
