@@ -1,6 +1,6 @@
 # 逐飞 RT1064 库 GCC (VSCode) 移植
 
-本项目是对逐飞 RT1064 库进行 GCC (VSCode) 的移植。
+本项目是对 [逐飞 RT1064 库](https://gitee.com/seekfree/RT1064_Library) 进行 GCC (VSCode) 的移植。
 
 具体踩坑的过程可以参考我的博客文章：[逐飞 RT1064 库 GCC (VSCode) 移植踩坑 | lookas](https://18kas.com/%E9%80%90%E9%A3%9E%20RT1064%20%E5%BA%93%20GCC%20(VSCode)%20%E7%A7%BB%E6%A4%8D%E8%B8%A9%E5%9D%91/)
 
