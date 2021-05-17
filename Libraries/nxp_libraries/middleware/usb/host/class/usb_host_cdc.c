@@ -155,7 +155,7 @@ void USB_HostCdcDataOutPipeCallback(void *param, usb_host_transfer_t *transfer, 
 #endif
     if (cdcInstance->outCallbackFn != NULL)
     {
-        /* callback to application，the callback function is initialized in USB_HostCdcDataSend */
+        /* callback to application, the callback function is initialized in USB_HostCdcDataSend */
         cdcInstance->outCallbackFn(cdcInstance->outCallbackParam, transfer->transferBuffer, transfer->transferSofar,
                                    status);
     }
