@@ -1,6 +1,6 @@
 #include "include.h"
 
-void main(void) {
+int main(void) {
   DisableGlobalIRQ(); // 关闭总中断
   board_init();       // 初始化 MPU 时钟 调试串口
 
@@ -15,7 +15,7 @@ void main(void) {
   }
 }
 
-// void main(void) {
+// int main(void) {
 //   DisableGlobalIRQ();
 //   board_init();
 

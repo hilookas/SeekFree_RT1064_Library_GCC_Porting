@@ -1,23 +1,23 @@
 target_include_directories(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/nxp_libraries/device/
     ${ProjDirPath}/../../Libraries/nxp_libraries/xip/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/cmsis_drivers/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/cmsis_drivers/
     ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/Include/
     ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Include/
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/include/
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/phy/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/dcd/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/dcd/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/device/
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/npw/host_config/fatfs/ehci/
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/inc/
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/lists/
@@ -33,6 +33,12 @@ target_include_directories(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/seekfree_libraries/common/
     ${ProjDirPath}/../../Libraries/seekfree_libraries/
     ${ProjDirPath}/../../Libraries/seekfree_peripheral/
+
+    # 模板、样例类文件
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/template/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/config/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/
 )
 
 target_sources(${MCUX_SDK_PROJECT_NAME} PRIVATE
@@ -64,10 +70,10 @@ target_sources(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_usdhc.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_pwm.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_cache.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexram_allocate.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexram_allocate.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_elcdif.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_cmp.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_mculcd_edma.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_i2c_master.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_tempmon.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_ewm.c
@@ -80,14 +86,14 @@ target_sources(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_tsc.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_csi.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_aoi.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_camera_edma.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_enc.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexcan_edma.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexcan_edma.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_uart.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_lpi2c_edma.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_rtwdog.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_lpi2c.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_mculcd.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_mculcd.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_uart_edma.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_semc.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_lpspi_edma.c
@@ -111,12 +117,12 @@ target_sources(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_ocotp.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_clock.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/drives/fsl_flexio_spi.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_host.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_event.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_host.c # 覆盖了 SysTick_Handler 导致 RT-Thread 无法进入 Tick 进行线程调度
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/polling/fsl_sdmmc_event.c # 覆盖了 SysTick_Handler 导致 RT-Thread 无法进入 Tick 进行线程调度
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_host.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/interrupt/fsl_sdmmc_event.c
-    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_host.c
-    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_event.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_host.c # 导致编译不过（无头文件）
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/port/usdhc/freertos/fsl_sdmmc_event.c # 导致编译不过（无头文件）
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdio.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/src/fsl_mmc.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/sdmmc/src/fsl_sdmmc_common.c
@@ -125,35 +131,35 @@ target_sources(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/ffunicode.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/diskio.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/ffsystem.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_mmc_disk/fsl_mmc_disk.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_nand_disk/fsl_nand_disk.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_sd_disk/fsl_sd_disk.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_usb_disk/fsl_usb_disk_bm.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/fatfs/source/fsl_ram_disk/fsl_ram_disk.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/phy/usb_phy.c
-    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd_ufi.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/dcd/usb_phydcd.c # 导致编译不过（无头文件）
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_devices.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_ehci.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_ohci.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_framework.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_ip3516hs.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_hci.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/usb_host_khci.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_printer.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_audio.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_video.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hid.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_cdc_rndis.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_hub_app.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_phdc.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/host/class/usb_host_msd_ufi.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/device/usb_device_ehci.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/device/usb_device_dci.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/device/usb_device_lpcip3511.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/device/usb_device_khci.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/lists/generic_list.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/osa/fsl_os_abstraction_bm.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/uart/lpuart_adapter.c
@@ -162,9 +168,9 @@ target_sources(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_class.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_cdc_acm.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/usb_cdc_adapter/usb_device_descriptor.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/serial_port_swo.c
-    ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/serial_port_usb.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/serial_port_usb_virtual.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/serial_port_swo.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/serial_port_usb.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/components/serial_manager/serial_port_uart.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/utilities/fsl_shell.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/utilities/fsl_assert.c
@@ -172,6 +178,33 @@ target_sources(${MCUX_SDK_PROJECT_NAME} PRIVATE
     ${ProjDirPath}/../../Libraries/nxp_libraries/utilities/fsl_notifier.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/utilities/str/fsl_str.c
     ${ProjDirPath}/../../Libraries/nxp_libraries/utilities/debug_console/fsl_debug_console.c
+
+    # 模板、样例类文件
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_MCI.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBD.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SAI.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USART.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_PHY.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_CAN.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_ETH_MAC.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_USBH.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Flash.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_SPI.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_Storage.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/CMSIS/Driver/DriverTemplates/Driver_I2C.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/usb_device_ch9.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_printer.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_dfu.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_class.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_video.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_rndis.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_ccid.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_audio.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_msc_ufi.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_cdc_acm.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_hid.c
+    # ${ProjDirPath}/../../Libraries/nxp_libraries/middleware/usb/templates/device/class/usb_device_phdc.c
 
     ${ProjDirPath}/../../Libraries/seekfree_libraries/board/board.c
     ${ProjDirPath}/../../Libraries/seekfree_libraries/board/pin_mux.c
